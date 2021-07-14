@@ -12,7 +12,7 @@ Resources: [blog](https://netflixtechblog.com/making-our-android-studio-apps-rea
 * GitHub actions for CI
 * Light/Dark Mode Support
 
-### OUTSTANING TASK AND IMPROVEMENTS
+### OUTSTANDING TASK AND IMPROVEMENTS
 - Increase Unit tests around current use of Mockwebserver
 - More Unit tests
 - Better Search view options
