@@ -12,6 +12,15 @@ Resources: [blog](https://netflixtechblog.com/making-our-android-studio-apps-rea
 * GitHub actions for CI
 * Light/Dark Mode Support
 
+### OUTSTANING TASK AND IMPROVEMENTS
+- Increase Unit tests around current use of Mockwebserver
+- More Unit tests
+- Better Search view options
+- Better arrangement of information current recyclerview
+- Finishing adding PullToRefresh
+- More robust regex testing
+- Make a better UI
+
 ## Prerequisite
 To build this project, you require:
 - Android Studio Bumble bee
