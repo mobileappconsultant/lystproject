@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/home_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <ImageView
+        android:id="@+id/pager_cat_images"
+        android:layout_width="0dp"
+        android:layout_height="729dp"
+        tools:src="@drawable/ic_error_page_2"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ProgressBar
+        android:id="@+id/posterLoadingView"
+        app:layout_constraintTop_toTopOf="@id/pager_cat_images"
+        app:layout_constraintStart_toStartOf="@id/pager_cat_images"
+        app:layout_constraintEnd_toEndOf="@id/pager_cat_images"
+        app:layout_constraintBottom_toBottomOf="@id/pager_cat_images"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cats</string>
+    <string name="search">… Cats</string>
+    <string name="clear_search_history">Clear history</string>
+    <string name="search_history_empty_text">Your recent searches will appear here</string>
+    <string name="recent_searches">Recent searches</string>
+    <string name="search_label_title">Looking for</string>
+    <string name="empty_state_icon">Empty state image</string>
+    <string name="cat_image">A cat image</string>
+    <string name="an_error_occurred">An error occurred</string>
+    <string name="no_data">No cats found</string>
+    <string name="error_fetching_details">Error fetching %s\'s detail</string>
+    <string name="home_icon">home icon</string>
+    <string name="cat_description_dummy_data">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="about_us">About us</string>
+    <string name="sub_title">Mirissa, Sri Lanka</string>
+    <string name="cat_dummy_title">Bongo Bong</string>
+    <string name="book_now">Buy Now</string>
+    <string name="slide_error_occurred">Unable to fetch cat pictures</string>
+
+</resources>

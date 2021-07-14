@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="@dimen/search_bar_margin_top"
+            style="@style/SearchBarLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/search_bar_label"
+            app:layout_constraintStart_toStartOf="@id/search_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_label_title"
+            />
+
+        <ImageView
+            android:id="@+id/search_bar_image"
+            app:layout_constraintTop_toTopOf="@id/search_bar"
+            app:layout_constraintBottom_toBottomOf="@id/search_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/search_bar_horizontal_margin"
+            android:src="@drawable/ic_search_lyst"
+            android:layout_width="40dp"
+            android:layout_height="0dp"/>
+
+        <EditText
+            style="@style/SearchBar"
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/search_bar_horizontal_margin"
+            android:hint="@string/search"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            tools:text="Ivorian"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/search_bar_image"
+            app:layout_constraintTop_toBottomOf="@+id/search_bar_label"
+            android:inputType="text"
+            android:autofillHints="@string/search" />
+
+        <include
+            layout="@layout/layout_search_history"
+            android:id="@+id/recent_search"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+        <include
+            layout="@layout/layout_search_result"
+            android:id="@+id/search_result"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/search_bar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
